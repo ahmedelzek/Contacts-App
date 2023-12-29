@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="30dp"
+    android:background="#DBF2FF"
+    android:id="@+id/addContactLayout">
+    <EditText
+        android:id="@+id/contactNameEditTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:hint="Name"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <EditText
+        android:id="@+id/contactPhoneEditTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintTop_toBottomOf="@id/contactNameEditTxt"
+        app:layout_constraintRight_toRightOf="@id/contactNameEditTxt"
+        app:layout_constraintLeft_toLeftOf="@id/contactNameEditTxt" />
+    <EditText
+        android:id="@+id/contactDescriptionEditTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Description"
+        android:textColorHint="@color/hintColor"
+        app:layout_constraintTop_toBottomOf="@id/contactPhoneEditTxt"
+        app:layout_constraintRight_toRightOf="@id/contactNameEditTxt"
+        app:layout_constraintLeft_toLeftOf="@id/contactNameEditTxt" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/contactDescriptionEditTxt"
+        app:layout_constraintRight_toRightOf="@id/contactDescriptionEditTxt"
+        app:layout_constraintLeft_toLeftOf="@id/contactDescriptionEditTxt"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
